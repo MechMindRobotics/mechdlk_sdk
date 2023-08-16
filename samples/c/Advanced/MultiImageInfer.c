@@ -31,8 +31,8 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the defect segmentation model exported by
-DLK for multiple images inference.
+Through this example program, we demonstrate how to use the defect segmentation model exported from
+Mech-DLK for inference of multiple images.
 */
 
 #include <stdio.h>

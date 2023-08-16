@@ -31,7 +31,7 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the classification model exported by DLK for
+Through this example program, we demonstrate how to use the classification model exported from Mech-DLK for
 image inference.
 */
 

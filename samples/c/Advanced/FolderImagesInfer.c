@@ -31,8 +31,8 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the defect segmentation model exported by
-DLK to infer all images in the folder.
+Through this example program, we demonstrate how to use the defect segmentation model exported from
+Mech-DLK to infer all images in a folder.
 */
 
 #include <io.h>

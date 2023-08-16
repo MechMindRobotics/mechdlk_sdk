@@ -31,7 +31,7 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the cascade model exported by DLK for image
+Through this example program, we demonstrate how to use the cascaded models exported from Mech-DLK for image
 inference.
 */
 

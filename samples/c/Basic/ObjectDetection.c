@@ -31,8 +31,8 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the object detection model exported by DLK
-for image inference.
+Through this example program, we demonstrate how to use the object detection model exported from 
+Mech-DLK for image inference.
 */
 
 #include <stdio.h>

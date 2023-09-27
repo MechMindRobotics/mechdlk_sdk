@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageInfer", "Basic\ImageInfer\ImageInfer.csproj", "{F5888533-AC8F-4F97-ACF9-662E5BE1323D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutiImageInfer", "Basic\MutiImageInfer\MutiImageInfer.csproj", "{4D158A94-5FBB-4A38-BC2D-CB4D58B2632F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5888533-AC8F-4F97-ACF9-662E5BE1323D}.Release|x64.ActiveCfg = Release|x64
+		{F5888533-AC8F-4F97-ACF9-662E5BE1323D}.Release|x64.Build.0 = Release|x64
+		{4D158A94-5FBB-4A38-BC2D-CB4D58B2632F}.Release|x64.ActiveCfg = Release|x64
+		{4D158A94-5FBB-4A38-BC2D-CB4D58B2632F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3510B007-D030-4652-B72E-3F3B60F1297E}
+	EndGlobalSection
+EndGlobal

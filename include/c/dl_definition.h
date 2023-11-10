@@ -89,6 +89,16 @@ typedef enum FloatPrecisionType {
     FP32  ///< Single-precision floating-point format.
 } FloatPrecisionType;
 
+typedef enum DLAlgoType {
+    Unknown = 0,
+    Classification,  /// <Classification
+    ObjectDetection, ///< ObjectDetection
+    InstanceSegmentation,
+    DefectSegmentation,
+    FastLocating,
+    EdgeDetection
+} DLAlgoType;
+
 /**
  * @brief This struct defines Image.
  */

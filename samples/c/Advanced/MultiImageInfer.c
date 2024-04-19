@@ -84,6 +84,6 @@ int main()
     releaseImage(&input[3]);
     releasePackInferEngine(&engine);
 
-    printf("Defect Segmentation model inference successful!\n");
+    printf("Defect Segmentation model inference succeeded!\n");
     return 0;
 }

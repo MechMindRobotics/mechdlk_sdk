@@ -31,8 +31,8 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the instance segmentation model exported from
-Mech-DLK for image inference.
+Through this example program, we demonstrate how to use the instance segmentation model exported
+from Mech-DLK for image inference.
 */
 
 #include <stdio.h>
@@ -69,6 +69,6 @@ int main()
     releaseImage(&input);
     releasePackInferEngine(&engine);
 
-    printf("Instance Segmentation model inference successful!\n");
+    printf("Instance Segmentation model inference succeeded!\n");
     return 0;
 }

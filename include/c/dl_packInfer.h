@@ -116,6 +116,19 @@ MMIND_DL_SDK_EXPORT StatusCode setBatchSizeAndFloatPrecision(
     const unsigned int moduleIdx);
 
 /**
+ * @brief Set the defect threshold and non-defect threshold for the unsupervised segmentation.
+ * @param [in] engine See @ref Engine for details.
+ * @param [in] defectThreshold The defect threshold.
+ * @param [in] nonDefectThreshold The non-defect threshold.
+ * @param [in] moduleIdx Specified model index in the model package.
+ * @return See @ref StatusCode for details.
+ * @note The value of defectThreshold must be greater than or equal to nonDefectThreshold.
+ */
+MMIND_DL_SDK_EXPORT StatusCode setUnsupSegParam(const Engine* engine, const float defectThreshold,
+                                                const float nonDefectThreshold,
+                                                const unsigned int moduleIdx);
+
+/**
  * @brief Make image inference using the model package inference engine.
  * @param [in] engine See @ref Engine for details.
  * @param [in] image See @ref MMindImage for details.
@@ -144,9 +157,9 @@ MMIND_DL_SDK_EXPORT StatusCode getDefectSegmentataionResult(const Engine* engine
  * @brief Release the memory of the defect segmentation result.
  * @param [in] results See @ref DefectAndEdgeResult for details.
  * @param [in] resultNum The number of inference results.
- * @note When using the @ref getDefectSegmentataionResult to get the defect segmentation result, and the
- * result is processed, do not forget to call @ref releaseDefectSegmentationResult to release the
- * memory and thus avoid memory leaks.
+ * @note When using the @ref getDefectSegmentataionResult to get the defect segmentation result, and
+ * the result is processed, do not forget to call @ref releaseDefectSegmentationResult to release
+ * the memory and thus avoid memory leaks.
  */
 MMIND_DL_SDK_EXPORT void releaseDefectSegmentationResult(DefectAndEdgeResult** results,
                                                          unsigned int resultNum);
@@ -222,6 +235,75 @@ MMIND_DL_SDK_EXPORT StatusCode getFastPositioningResult(const Engine* engine,
  */
 MMIND_DL_SDK_EXPORT void releaseFastPositioningResult(FastPositioningResult** results,
                                                       unsigned int resultNum);
+
+/**
+ * @brief Get the text recognition result.
+ * @param [in] engine See @ref Engine for details.
+ * @param [in] moduleIdx Specified model index in the model package.
+ * @param [out] results See @ref TextRecognitionResult for details.
+ * @param [out] resultNum The number of inference results.
+ * @return See @ref StatusCode for details.
+ */
+MMIND_DL_SDK_EXPORT StatusCode getTextRecognitionResult(const Engine* engine,
+                                                        const unsigned int moduleIdx,
+                                                        TextRecognitionResult** results,
+                                                        unsigned int* resultNum);
+
+/**
+ * @brief Release the memory of the text recognition result.
+ * @param [in] results See @ref TextRecognitionResult for details.
+ * @param [in] resultNum The number of inference results.
+ * @note When using the @ref getTextRecognitionResult to get the text recognition result, and
+ * the result is processed, do not forget to call @ref releaseTextRecognitionResult to release the
+ * memory and thus avoid memory leaks.
+ */
+MMIND_DL_SDK_EXPORT void releaseTextRecognitionResult(TextRecognitionResult** results,
+                                                      unsigned int resultNum);
+
+/**
+ * @brief Get the text detection result.
+ * @param [in] engine See @ref Engine for details.
+ * @param [in] moduleIdx Specified model index in the model package.
+ * @param [out] results See @ref TextDetectionResult for details.
+ * @param [out] resultNum The number of inference results.
+ * @return See @ref StatusCode for details.
+ */
+MMIND_DL_SDK_EXPORT StatusCode getTextDetectionResult(const Engine* engine,
+                                                      const unsigned int moduleIdx,
+                                                      TextDetectionResult** results,
+                                                      unsigned int* resultNum);
+
+/**
+ * @brief Release the memory of the text detection result.
+ * @param [in] results See @ref TextDetectionResult for details.
+ * @param [in] resultNum The number of inference results.
+ * @note When using the @ref getTextDetectionResult to get the text detection result, and
+ * the result is processed, do not forget to call @ref releaseTextDetectionResult to release the
+ * memory and thus avoid memory leaks.
+ */
+MMIND_DL_SDK_EXPORT void releaseTextDetectionResult(TextDetectionResult** results,
+                                                    unsigned int resultNum);
+
+/**
+ * @brief Get the unsupervised segmentation result.
+ * @param [in] engine See @ref Engine for details.
+ * @param [in] moduleIdx Specified model index in the model package.
+ * @param [out] results See @ref UnsupSegResult for details.
+ * @param [out] resultNum The number of inference results.
+ * @return See @ref StatusCode for details.
+ */
+MMIND_DL_SDK_EXPORT StatusCode getUnsupSegResult(const Engine* engine, const unsigned int moduleIdx,
+                                                 UnsupSegResult** results, unsigned int* resultNum);
+
+/**
+ * @brief Release the memory of the unsupervised segmentation result.
+ * @param [in] results See @ref TextDetectionResult for details.
+ * @param [in] resultNum The number of inference results.
+ * @note When using the @ref getUnsupSegResult to get the unsupervised segmentation result, and
+ * the result is processed, do not forget to call @ref releaseUnsupSegResult to release the
+ * memory and thus avoid memory leaks.
+ */
+MMIND_DL_SDK_EXPORT void releaseUnsupSegResult(UnsupSegResult** results, unsigned int resultNum);
 
 /**
  * @brief Draw the model results of the specified index onto the images.

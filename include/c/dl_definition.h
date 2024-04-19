@@ -62,13 +62,14 @@ typedef enum StatusCode {
     E_INVALID_IMAGE_PATH,      ///< Error: invalid image path.
     E_UNZIP_ERROR,             ///< Error: unable to unzip the model package.
     E_INVALID_IMAGE_NULLPTR,   ///< Error: invalid image pointer.
-    E_MODEL_REGISTEXCEEDLIMIT, ///< Error: model loading failed as the number of models loaded has
-                               ///< reached the upper limit.
+    E_MODEL_REGISTEXCEEDLIMIT, ///< Error: model loading failed as the number of models loaded has reached the upper limit.
     E_MODULE_INDEX_ERROR,      ///< Error: module index out of range.
     E_MODULE_TYPE_ERROR,       ///< Error: the function of an incorrect model type was called.
     E_SET_GPUID_ERROR,         ///< Error: incorrect GPU ID setting.
     E_INVALID_ENGINE,          ///< Error: engine creation failed.
-    E_INVALID_BACKEND_TYPE     ///< Error: invalid backend type.
+    E_INVALID_BACKEND_TYPE,    ///< Error: invalid backend type.
+    E_INVALID_ALGO_TYPE,       ///< Error: invalid deep learning algorithm type.
+    E_PARAM_ERROR              ///< Error: incorrect parameter settings.
 } StatusCode;
 
 /**
@@ -76,8 +77,7 @@ typedef enum StatusCode {
  */
 typedef enum BackendType {
     GpuDefault,      ///< GPU default mode.
-    GpuOptimization, ///< GPU optimization mode. In this mode, it takes 1-5 minutes to
-                     ///< optimize the model.
+    GpuOptimization, ///< GPU optimization mode. In this mode, it takes 1-5 minutes to optimize the model.
     CPU              ///< CPU mode. Used when a GPU is not available.
 } BackendType;
 
@@ -89,15 +89,30 @@ typedef enum FloatPrecisionType {
     FP32  ///< Single-precision floating-point format.
 } FloatPrecisionType;
 
+/**
+ * @brief This enumeration defines the deep learning algorithm type.
+ */
 typedef enum DLAlgoType {
-    Unknown = 0,
-    Classification,  /// <Classification
-    ObjectDetection, ///< ObjectDetection
-    InstanceSegmentation,
-    DefectSegmentation,
-    FastLocating,
-    EdgeDetection
+    Unknown = 0,          /// <Unknown
+    Classification,       /// <Classification
+    ObjectDetection,      /// <ObjectDetection
+    InstanceSegmentation, /// <InstanceSegmentation
+    DefectSegmentation,   /// <DefectSegmentation
+    FastLocating,         /// <FastLocating
+    EdgeDetection,        /// <EdgeDetection
+    TextRecognition,      /// <TextRecognition
+    TextDetection,        /// <TextDetection
+    UnsupSegmentation     /// <UnsupSegmentation
 } DLAlgoType;
+
+/**
+ * @brief This enum defines unsupervised segmentation label.
+ */
+typedef enum UnsupLabel {
+    OK = 0, /// <There are no defects in the current image.
+    NG,     /// <There are some defects in the current image.
+    UNKNOWN /// <Not sure if there is a defect in the image.
+} UnsupLabel;
 
 /**
  * @brief This struct defines Image.

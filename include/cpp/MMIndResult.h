@@ -115,6 +115,43 @@ struct MMindFastPositioningResult
     std::vector<double> angle;             ///< Result of the rotation angle.
     std::vector<MMindKeyPoints> keyPoints; ///< Result of keypoint detection.
 };
+
+/**
+ * @brief Defines the text recognition result.
+ */
+struct MMindTextRecognitionResult
+{
+    std::vector<float> confidences; ///< Result of confidence for all characters.
+    std::vector<std::string> texts; ///< Result of text recognition.
+};
+
+/**
+ * @brief Defines the text detection result.
+ */
+struct MMindTextDetectionResult
+{
+    std::vector<double> confidences; ///< Result of confidence for all characters.
+    MMindContour textContour;        ///< Result of text detection.
+};
+
+/**
+ * @brief Defines the unsupervised segmentation result.
+ */
+struct MMindUnsupSegResult
+{
+    /**
+     * @brief Defines the unsupervised segmentation label.
+     */
+    enum class Label {
+        OK,     /// <There are no defects in the current image.
+        NG,     /// <There are some defects in the current image.
+        UNKNOWN /// <Not sure if there is a defect in the image.
+    };
+    Label label;              ///< Label of the unsupervised segmentation result.
+    MMindContour mask;        ///< Contour of the unsupervised segmentation result.
+    MMindImage confidenceMat; ///< Confidence map of the unsupervised segmentation result.
+};
+
 /**
  * @brief Defines storing inference results.
  */
@@ -128,6 +165,11 @@ struct MMindResult
         objecAndInsResults; ///< List of object detection or instance segmentation results.
     std::vector<MMindFastPositioningResult>
         fastPositioningResults; ///< List of fast positioning results.
+    std::vector<MMindTextRecognitionResult>
+        textRecognitionResults; ///< List of text recognition results.
+    std::vector<MMindTextDetectionResult> textDetectionResults; ///< List of text detection results.
+    std::vector<MMindUnsupSegResult>
+        unsupSegResults; ///< List of unsupervised segmentation results.
 };
 
 } // namespace mmind::dl

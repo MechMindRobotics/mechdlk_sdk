@@ -44,12 +44,18 @@ extern "C" {
  */
 typedef struct Position
 {
-    float x; ///< The x-coordinate of the result is relative to the upper-left corner of the
-             ///< original image.
-    float y; ///< The y-coordinate of the result is relative to the upper-left corner of the
-             ///< original image.
+    float x; ///< The x-coordinate of the result is relative to the upper-left corner of the original image.
+    float y; ///< The y-coordinate of the result is relative to the upper-left corner of the original image.
 } Position;
 
+/**
+ * @brief This struct defines the information on contour points.
+ */
+typedef struct Point
+{
+    int x; ///< The x-coordinate of the contour point.
+    int y; ///< The y-coordinate of the contour point.
+} Point;
 /**
  * @brief This struct defines the information on the bounding box.
  */
@@ -133,6 +139,38 @@ typedef struct FastPositioningResult
     double rotationAngle;          ///< Result of the rotation angle.
     ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
 } FastPositioningResult;
+
+/**
+ * @brief This struct defines the text recognition result.
+ */
+typedef struct TextRecognitionResult
+{
+    int textNum;                   ///< The number of character recognized.
+    char* text;                    ///< Text recognition result.
+    float* confidences;            ///< The confidence of each character recognized.
+    ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
+} TextRecognitionResult;
+
+/**
+ * @brief This struct defines the text detection result.
+ */
+typedef struct TextDetectionResult
+{
+    double confidence;             ///< Confidence of text detection results
+    Contour textContour;           ///< Contour of text detection result.
+    ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
+} TextDetectionResult;
+
+/**
+ * @brief This struct defines the unsupervised segmentation result.
+ */
+typedef struct UnsupSegResult
+{
+    UnsupLabel label;              ///< Label of the segmentation result.
+    Contour maskContour;           ///< Contour of the segmentation result.
+    MMindImage confidenceMat;      ///< Confidence map of the segmentation result.
+    ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
+} UnsupSegResult;
 
 #ifdef __cplusplus
 }

@@ -82,3 +82,5 @@ foreach(SAMPLE ${SAMPLES})
     VS_DEBUGGER_WORKING_DIRECTORY "$(ProjectDir)/release")
 
 endforeach()
+
+

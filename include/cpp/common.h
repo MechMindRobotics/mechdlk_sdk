@@ -46,8 +46,7 @@ enum class FloatPrecisionType {
  */
 enum class InferDeviceType {
     GpuDefault,      ///< GPU default mode.
-    GpuOptimization, ///< GPU optimization mode. In this mode, it takes 1-5 minutes to
-                     ///< optimize the model.
+    GpuOptimization, ///< GPU optimization mode. In this mode, it takes 1-5 minutes to optimize the model.
     CPU              ///< CPU mode. It is used when a GPU is not available.
 };
 
@@ -55,13 +54,16 @@ enum class InferDeviceType {
  * @brief Defines the deep learning algorithm type.
  */
 enum class DeepLearningAlgoType {
-    Unknown = 0,
+    Unknown = 0,          /// <Unknown
     Classification,       /// <Classification
     ObjectDetection,      /// <ObjectDetection
     InstanceSegmentation, /// <InstanceSegmentation
     DefectSegmentation,   /// <DefectSegmentation
     FastLocating,         /// <FastLocating
     EdgeDetection,        /// <EdgeDetection
+    TextRecognition,      /// <TextRecognition
+    TextDetection,        /// <TextDetection
+    UnsupSegmentation     /// <UnsupSegmentation
 };
 
 } // namespace mmind::dl

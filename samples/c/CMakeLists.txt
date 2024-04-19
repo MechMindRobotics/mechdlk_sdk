@@ -1,12 +1,12 @@
 ﻿cmake_minimum_required(VERSION 3.14)
-project(MechDLKSDKCSamples)
+project(MechDLCSamples)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CONFIGURATION_TYPES "Release;RelWithDebInfo" CACHE STRING "" FORCE)
-
 if(CMAKE_HOST_UNIX)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 endif()
+
 
 set(SAMPLES
     Basic/Classification.c
@@ -14,12 +14,14 @@ set(SAMPLES
     Basic/FastPositioning.c
     Basic/InstanceSegmentation.c
     Basic/ObjectDetection.c
+    Basic/TextDetection.c
+    Basic/TextRecognition.c
+    Basic/UnsupSegmentation.c
 
     Advanced/CascadeModel.c
     Advanced/MultiImageInfer.c
     Advanced/FolderImagesInfer.c
   )
-
 
 if(CMAKE_HOST_WIN32)
   find_package(MechDLKSDK REQUIRED CONFIG)
@@ -39,6 +41,7 @@ elseif(CMAKE_HOST_UNIX)
     endif()
   endif()
 endif()
+
 
 message(STATUS "All samples: ${SAMPLES}")
 

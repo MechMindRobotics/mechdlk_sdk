@@ -109,6 +109,17 @@ public:
     StatusCode setInferDeviceType(const InferDeviceType type);
 
     /**
+     * @brief Sets the defect threshold and non-defect threshold for the unsupervised segmentation.
+     * @param [in] defectThreshold The defect threshold.
+     * @param [in] nonDefectThreshold The non-defect threshold.
+     * @param [in] moduleIdx Specified model index in the model package.
+     * @return See @ref StatusCode for details.
+     * @note The value of defectThreshold must be greater than or equal to nonDefectThreshold.
+     */
+    StatusCode setUnsupSegParam(const float defectThreshold, const float nonDefectThreshold,
+                                const unsigned int moduleIdx);
+
+    /**
      * @brief Creates an infer engine for model package inference.
      * @param [in] modelPath The path to the model package exported from Mech-DLK.
      * @return See @ref StatusCode for details.

@@ -31,8 +31,8 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the classification model exported from Mech-DLK for
-image inference.
+Through this example program, we demonstrate how to use the classification model exported from
+Mech-DLK for image inference.
 */
 
 #include <stdio.h>
@@ -68,6 +68,6 @@ int main()
     releaseImage(&input);
     releasePackInferEngine(&engine);
 
-    printf("Classification model inference successful!\n");
+    printf("Classification model inference succeeded!\n");
     return 0;
 }

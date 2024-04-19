@@ -31,7 +31,7 @@
  ******************************************************************************/
 
 /*
-Through this example program, we demonstrate how to use the object detection model exported from 
+Through this example program, we demonstrate how to use the object detection model exported from
 Mech-DLK for image inference.
 */
 
@@ -69,6 +69,6 @@ int main()
     releaseImage(&input);
     releasePackInferEngine(&engine);
 
-    printf("Object Detection model inference successful!\n");
+    printf("Object Detection model inference succeeded!\n");
     return 0;
 }

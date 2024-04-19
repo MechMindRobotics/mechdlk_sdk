@@ -70,6 +70,6 @@ int main()
     releaseImage(&input);
     releasePackInferEngine(&engine);
 
-    printf("Defect Segmentation model inference successful!\n");
+    printf("Defect Segmentation model inference succeeded!\n");
     return 0;
 }

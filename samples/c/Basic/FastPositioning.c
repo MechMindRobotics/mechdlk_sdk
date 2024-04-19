@@ -69,6 +69,6 @@ int main()
     releaseImage(&input);
     releasePackInferEngine(&engine);
 
-    printf("Fast Positioning model inference successful!\n");
+    printf("Fast Positioning model inference succeeded!\n");
     return 0;
 }

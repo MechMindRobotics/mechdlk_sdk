@@ -91,7 +91,7 @@ int main()
         }
     } while (!_findnext(handle, &fileinfo));
     releasePackInferEngine(&engine);
-    printf("Defect Segmentation model inference successful!\n");
+    printf("Defect Segmentation model inference succeeded!\n");
     _findclose(handle);
 
     return 0;

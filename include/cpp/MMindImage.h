@@ -36,6 +36,9 @@
 #include "common/StatusCode.h"
 
 namespace mmind::dl {
+/**
+ * @brief Defines the Image.
+ */
 struct MMIND_DL_SDK_EXPORT MMindImage
 {
     /**

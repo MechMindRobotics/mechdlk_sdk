@@ -121,7 +121,7 @@ struct MMindFastPositioningResult
  */
 struct MMindTextRecognitionResult
 {
-    std::vector<float> confidences; ///< Result of confidence for all characters.
+    std::vector<float> confidences; ///< Confidences of text recognition.
     std::vector<std::string> texts; ///< Result of text recognition.
 };
 
@@ -130,7 +130,7 @@ struct MMindTextRecognitionResult
  */
 struct MMindTextDetectionResult
 {
-    std::vector<double> confidences; ///< Result of confidence for all characters.
+    std::vector<double> confidences; ///< Confidences of text detection.
     MMindContour textContour;        ///< Result of text detection.
 };
 
@@ -147,9 +147,9 @@ struct MMindUnsupSegResult
         NG,     /// <There are some defects in the current image.
         UNKNOWN /// <Not sure if there is a defect in the image.
     };
-    Label label;              ///< Label of the unsupervised segmentation result.
-    MMindContour mask;        ///< Contour of the unsupervised segmentation result.
-    MMindImage confidenceMat; ///< Confidence map of the unsupervised segmentation result.
+    std::vector<Label> labels; ///< Labels of the unsupervised segmentation result.
+    MMindContour mask;         ///< Contour of the unsupervised segmentation result.
+    MMindImage confidenceMat;  ///< Confidence map of the unsupervised segmentation result.
 };
 
 /**
@@ -157,19 +157,13 @@ struct MMindUnsupSegResult
  */
 struct MMindResult
 {
-    std::vector<MMIndClassificationResult>
-        classificationResults; ///< List of classification results.
-    std::vector<MMIndDefectAndEdgeResult>
-        defectAndEdgeResults; ///< List of defect segmentation results.
-    std::vector<MMindObjectAndInsResult>
-        objecAndInsResults; ///< List of object detection or instance segmentation results.
-    std::vector<MMindFastPositioningResult>
-        fastPositioningResults; ///< List of fast positioning results.
-    std::vector<MMindTextRecognitionResult>
-        textRecognitionResults; ///< List of text recognition results.
-    std::vector<MMindTextDetectionResult> textDetectionResults; ///< List of text detection results.
-    std::vector<MMindUnsupSegResult>
-        unsupSegResults; ///< List of unsupervised segmentation results.
+    std::vector<MMIndClassificationResult> classificationResults;   ///< List of classification results.
+    std::vector<MMIndDefectAndEdgeResult> defectAndEdgeResults;     ///< List of defect segmentation results.
+    std::vector<MMindObjectAndInsResult> objecAndInsResults;        ///< List of object detection or instance segmentation results.
+    std::vector<MMindFastPositioningResult> fastPositioningResults; ///< List of fast positioning results.
+    std::vector<MMindTextRecognitionResult> textRecognitionResults; ///< List of text recognition results.
+    std::vector<MMindTextDetectionResult> textDetectionResults;     ///< List of text detection results.
+    std::vector<MMindUnsupSegResult> unsupSegResults;               ///< List of unsupervised segmentation results.
 };
 
 } // namespace mmind::dl

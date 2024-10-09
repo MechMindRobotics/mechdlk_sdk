@@ -48,17 +48,6 @@ struct MMindPoint
 };
 
 /**
- * @brief Defines the information on fast positioning keypoints.
- */
-struct MMindKeyPoints
-{
-    float startX; ///< X-coordinate of the starting point for fast positioning.
-    float startY; ///< Y-coordinate of the starting point for fast positioning.
-    float endX;   ///< X-coordinate of the end point for fast positioning.
-    float endY;   ///< Y-coordinate of the end point for fast positioning.
-};
-
-/**
  * @brief Defines the information on the bounding box.
  */
 struct MMindBbox
@@ -112,8 +101,8 @@ struct MMindObjectAndInsResult
  */
 struct MMindFastPositioningResult
 {
-    std::vector<double> angle;             ///< Result of the rotation angle.
-    std::vector<MMindKeyPoints> keyPoints; ///< Result of keypoint detection.
+    std::vector<double> angles;                   ///< Result of the rotation angle.
+    std::vector<MMindPoint> rotationCenterPoints; ///< Result of rotation center point.
 };
 
 /**

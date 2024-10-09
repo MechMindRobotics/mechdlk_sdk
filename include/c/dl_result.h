@@ -80,17 +80,6 @@ typedef struct Contour
 } Contour;
 
 /**
- * @brief This struct defines the information on fast positioning keypoints.
- */
-typedef struct KeyPoints
-{
-    float startX; ///< X-coordinate of the starting point for fast positioning.
-    float startY; ///< Y-coordinate of the starting point for fast positioning.
-    float endX;   ///< X-coordinate of the end point for fast positioning.
-    float endY;   ///< Y-coordinate of the end point for fast positioning.
-} KeyPoints;
-
-/**
  * @brief This struct defines the information required to recover the result to the original image.
  */
 typedef struct ResultRestoreInfo
@@ -135,7 +124,7 @@ typedef struct ObjectAndInsResult
  */
 typedef struct FastPositioningResult
 {
-    KeyPoints keyPoints;           ///< Result of keypoint detection.
+    Point rotationCenterPoint;     ///< Result of rotation center point.
     double rotationAngle;          ///< Result of the rotation angle.
     ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
 } FastPositioningResult;

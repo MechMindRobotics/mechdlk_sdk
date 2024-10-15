@@ -102,7 +102,7 @@ struct MMindObjectAndInsResult
 struct MMindFastPositioningResult
 {
     std::vector<double> angles;                   ///< Result of the rotation angle.
-    std::vector<MMindPoint> rotationCenterPoints; ///< Result of rotation center point.
+    std::vector<MMindPoint> rotationCenterPoints; ///< Result of the rotation center point.
 };
 
 /**

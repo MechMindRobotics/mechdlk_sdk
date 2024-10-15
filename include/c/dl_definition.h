@@ -70,7 +70,7 @@ typedef enum StatusCode {
     E_INVALID_BACKEND_TYPE,    ///< Error: invalid backend type.
     E_INVALID_ALGO_TYPE,       ///< Error: invalid deep learning algorithm type.
     E_PARAM_ERROR,             ///< Error: incorrect parameter settings.
-    E_AUTHOR_TYPE_ERROR        ///< Error: Authorization type error.
+    E_AUTHOR_TYPE_ERROR        ///< Error: authorization type error.
 } StatusCode;
 
 /**

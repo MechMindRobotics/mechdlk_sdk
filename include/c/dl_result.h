@@ -124,7 +124,7 @@ typedef struct ObjectAndInsResult
  */
 typedef struct FastPositioningResult
 {
-    Point rotationCenterPoint;     ///< Result of rotation center point.
+    Point rotationCenterPoint;     ///< Result of the rotation center point.
     double rotationAngle;          ///< Result of the rotation angle.
     ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
 } FastPositioningResult;

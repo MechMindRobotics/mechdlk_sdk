@@ -12,7 +12,8 @@ Empower your creativity with Mech-DLK SDK, ready for you to unleash your program
 ## What's Mech-DLK SDK
 Mech-DLK SDK is a secondary development software kit specifically designed to be used with [Mech-DLK](https://www.mech-mind.com/products/mech-dlk-deep-learning-software.html). It mainly helps you easily do deep learning inference in your software systems. With Mech-DLK SDK, you can rapidly deploy deep learning models and flexibly integrate deep learning functionality into your own applications without reliance on [Mech-Vision](https://www.mech-mind.com/products/mech-vision-machine-vision-software.html). Currently, development in C#, C++, and C languages is supported.
 
-📥 If you need to install Mech-DLK, please go to [Download Center](https://downloads.mech-mind.com/?tab=tab-dlk) to get the Mech-DLK Installer (version 2.4.2 or above). You can contact us at info@mech-mind.net to learn more about software licenses.
+📥 If you need to install Mech-DLK, please go to [Download Center](https://downloads.mech-mind.com/?tab=tab-dlk) to get the Mech-DLK Installer. You can contact us at info@mech-mind.net to learn more about software licenses.
+> **NOTE**: If you are using Mech-DLK SDK version 2.1.0 or later, please download Mech-DLK version 2.6.0 or later. If you are using Mech-DLK SDK version earlier than 2.1.0, please download Mech-DLK version earlier than 2.6.0.
 
 💡 If you have any questions or have anything to share regarding our SDK, feel free to post on [Mech-Mind Online Community](https://community.mech-mind.com/). 
 
@@ -20,7 +21,9 @@ Mech-DLK SDK is a secondary development software kit specifically designed to be
 
 ### ❗Prerequisites
 1. Make sure that you've purchased Mech-DLK's Pro-Train/Pro-Run software license.
-2. It is recommended that the used device should satisfy the following requirements:
+2. Make sure that you've [downloaded](https://releasehub-1316409819.cos.accelerate.myqcloud.com/Download/Tools/Sentinel_LDK_Run-time_setup%2010.11.zip) and installed the Sentinel LDK encryption driver.
+3. Make sure that you've [activated or updated](https://docs.mech-mind.net/en/dlk-sdk-manual/2.1.0/faq/software-license.html#manage-license) the software license that you purchased.
+4. It is recommended that the used device should satisfy the following requirements:
 
 |Authorized software license version | Pro-Run | Pro-Train
 |  :----  | :----:  | :----:
@@ -37,9 +40,12 @@ Mech-DLK SDK is a secondary development software kit specifically designed to be
 
 2. Clone the repository of [Mech-DLK SDK](https://github.com/MechMindRobotics/mechdlk_sdk/tree/v2.1.0) to the project folder.
 
-3. Download the third-party libraries (3rd_dll.zip) and resources (resources.zip) that Mech-DLK SDK relies on to the project folder from [Download Center](https://downloads.mech-mind.com/?tab=tab-dlk-sdk).
+3. Download the [third-party libraries (3rd_dll.zip)](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/3rd_dll.zip?csf=1&web=1&e=tTh4E1) and [resources (resources.zip)](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/resources.zip?csf=1&web=1&e=L9WL2x) that Mech-DLK SDK relies on to the project folder.
 
 4. Unzip the downloaded packages of third-party libraries and resources.
+
+> - CRC32 value for third-party libraries: 9037EC58
+> - CRC32 value for resources: 3C23BC3A
 
 ## Glimpse of inference flow 👀 
 ![inference flow](https://docs.mech-mind.net/download/github/DLK/inference-flow-en.png)

@@ -10,7 +10,9 @@
 ## 简介
 Mech-DLK SDK 是专门配合 [Mech-DLK](https://www.mech-mind.com.cn/product/mech-dlk-offline-training-tools-for-deep-learning.html) 使用的二次开发软件包，主要用来帮助用户在已有的软件体系内轻松构建深度学习推理部分。你可以在不依赖 [Mech-Vision](https://www.mech-mind.com.cn/product/mech-vision-graphical-machine-vision-software.html) 的情况下，快速部署深度学习模型，灵活地集成深度学习功能到自己的应用中。目前支持 C#、C++ 及 C 语言开发。
 
-📥 如需下载 Mech-DLK 软件，可进入[下载中心](https://downloads.mech-mind.com.cn/?tab=tab-dlk)获取安装包（2.4.2 或以上版本）。授权相关问题请咨询 info@mech-mind.net。
+📥 如需下载 Mech-DLK 软件，可进入[下载中心](https://downloads.mech-mind.com.cn/?tab=tab-dlk)获取安装包。授权相关问题请咨询 info@mech-mind.net。
+> **NOTE**: 使用 Mech-DLK SDK 2.1.0 或以上版本时，请下载 Mech-DLK 2.6.0 或以上版本。使用 Mech-DLK SDK 2.1.0 以下版本时，请下载 Mech-DLK 2.6.0 以下版本。
+
 
 💡 在使用过程中，如果有任何关于 Mech-DLK SDK 的意见和建议，欢迎在[梅卡曼德在线社区](https://community.mech-mind.com.cn/)上发帖交流。
 
@@ -19,7 +21,9 @@ Mech-DLK SDK 是专门配合 [Mech-DLK](https://www.mech-mind.com.cn/product/mec
 ### 安装前提
 
 1. 请确保你已购买 Mech-DLK 的软件许可授权版本 Pro-Train 或 Pro-Run。
-2. 建议使用的设备满足以下要求：
+2. [下载](https://releasehub-1316409819.cos.accelerate.myqcloud.com/Download/Tools/Sentinel_LDK_Run-time_setup%2010.11.zip)并安装 Sentinel LDK 加密驱动。
+3. [激活或更新](https://docs.mech-mind.net/zh/dlk-sdk-manual/2.1.0/faq/software-license.html#manage-license)软件许可。
+4. 建议使用的设备满足以下要求：
 
 |软件许可授权版本 | Pro-Run | Pro-Train
 |  :----  | :----:  | :----:
@@ -35,9 +39,12 @@ Mech-DLK SDK 是专门配合 [Mech-DLK](https://www.mech-mind.com.cn/product/mec
 
 2. 将 [Mech-DLK SDK](https://github.com/MechMindRobotics/mechdlk_sdk/tree/v2.1.0) 从 GitHub 克隆到该项目文件夹下。
 
-3. 从[下载中心](https://downloads.mech-mind.com.cn/?tab=tab-dlk-sdk)下载 Mech-DLK SDK 依赖的第三方库（3rd_dll.zip）和资源文件（resources.zip）到该项目文件夹下。
+3. 下载 Mech-DLK SDK 依赖的[第三方库（3rd_dll.zip）](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/3rd_dll.zip?csf=1&web=1&e=tTh4E1)和[资源文件（resources.zip）](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/resources.zip?csf=1&web=1&e=L9WL2x)到该项目文件夹下。
 
 4. 解压第三方库压缩包和资源文件压缩包。
+
+> - 第三方库 CRC32 码：9037EC58
+> - 资源文件 CRC32 码：3C23BC3A
 
 ## 推理流程速览 👀 
 ![inference flow](https://docs.mech-mind.net/download/github/DLK/inference-flow-zh.png)

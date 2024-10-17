@@ -35,9 +35,12 @@ Mech-DLK SDK 是专门配合 [Mech-DLK](https://www.mech-mind.com.cn/product/mec
 
 2. 将 [Mech-DLK SDK](https://github.com/MechMindRobotics/mechdlk_sdk/tree/v2.0.3) 从 GitHub 克隆到该项目文件夹下。
 
-3. 从[下载中心](https://downloads.mech-mind.com.cn/?tab=tab-dlk-sdk)下载 Mech-DLK SDK 依赖的第三方库（3rd_dll.zip）和资源文件（resources.zip）到该项目文件夹下。
+3. 下载 Mech-DLK SDK 依赖的[第三方库（3rd_dll.zip）](https://mechmindonedrive-my.sharepoint.com/:u:/g/personal/no-reply_onedrive_mech-mind-robotics_com_cn/ERTRUq5A-QNOmamRPmXWldEB8gT7RrnD_hq4jL8yjba7nw?e=yJM2hM)和[资源文件（resources.zip）](https://mechmindonedrive-my.sharepoint.com/:u:/g/personal/no-reply_onedrive_mech-mind-robotics_com_cn/EaECffrTbcNIklIibFkNN-ABNyN7dMTFS6Y8-GuPEIwqgA?e=Pm8ydS)到该项目文件夹下。
 
 4. 解压第三方库压缩包和资源文件压缩包。
+
+> - 第三方库 CRC32 码：D3FD602E
+> - 资源文件 CRC32 码：6672F58A
 
 ## 推理流程速览 👀 
 ![inference flow](https://docs.mech-mind.net/download/github/DLK/inference-flow-zh.png)

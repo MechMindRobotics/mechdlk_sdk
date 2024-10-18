@@ -1,7 +1,7 @@
 #  Mech-DLK SDK 2.1.0 正式推出，助力深度学习模型推理！
 <div align="center">
 
-🌐 [English](README.md) | 简体中文
+🌐 [English](README.md) | 简体中文 | [한국어](README_ko-KR.md)
 
 </div>
 

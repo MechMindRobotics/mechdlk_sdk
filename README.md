@@ -1,7 +1,7 @@
 # Mech-DLK SDK 2.1.0 is now available! 🎉
 <div align="center">
 
-🌐 English | [简体中文](README_zh-CN.md)
+🌐 English | [简体中文](README_zh-CN.md) | [한국어](README_ko-KR.md)
 
 </div>
 

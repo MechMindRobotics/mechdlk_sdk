@@ -39,7 +39,7 @@ Mech-DLK SDK 是专门配合 [Mech-DLK](https://www.mech-mind.com.cn/product/mec
 
 2. 将 [Mech-DLK SDK](https://github.com/MechMindRobotics/mechdlk_sdk/tree/v2.1.0) 从 GitHub 克隆到该项目文件夹下。
 
-3. 下载 Mech-DLK SDK 依赖的[第三方库（3rd_dll.zip）](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/3rd_dll.zip?csf=1&web=1&e=tTh4E1)和[资源文件（resources.zip）](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/resources.zip?csf=1&web=1&e=L9WL2x)到该项目文件夹下。
+3. 下载 Mech-DLK SDK 依赖的[第三方库（3rd_dll.zip）和资源文件（resources.zip）](https://mechmindonedrive-my.sharepoint.com/:f:/g/personal/no-reply_onedrive_mech-mind-robotics_com_cn/EmQzsLUIrPxEixvn80V3rdcBwFOnIr3nWoSww9YXitAefw?e=k1gggB)到该项目文件夹下。
 
 4. 解压第三方库压缩包和资源文件压缩包。
 

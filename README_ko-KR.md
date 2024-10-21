@@ -40,7 +40,7 @@ Mech-DLK SDK는 [Mech-DLK](https://kr.mech-mind.com/product/P0042.html)와 함�
 
 2. [Mech-DLK SDK](https://github.com/MechMindRobotics/mechdlk_sdk/tree/v2.1.0) 를 GitHub 에서 프로젝트 폴더로 복제합니다.
 
-3. Mech-DLK SDK 의존하는 [third-party libraries（3rd_dll.zip）](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/3rd_dll.zip?csf=1&web=1&e=tTh4E1)와 [resources (resources.zip)](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/resources.zip?csf=1&web=1&e=L9WL2x)를 프로젝트 폴더에 다운로드합니다.
+3. Mech-DLK SDK 의존하는 [third-party libraries（3rd_dll.zip）와 resources (resources.zip)](https://mechmindonedrive-my.sharepoint.com/:f:/g/personal/no-reply_onedrive_mech-mind-robotics_com_cn/EmQzsLUIrPxEixvn80V3rdcBwFOnIr3nWoSww9YXitAefw?e=k1gggB)를 프로젝트 폴더에 다운로드합니다.
 
 4. 다운로드한 third-party libraries 및 resources 패키지의 압축을 풉니다.
 

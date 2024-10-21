@@ -40,7 +40,7 @@ Mech-DLK SDK is a secondary development software kit specifically designed to be
 
 2. Clone the repository of [Mech-DLK SDK](https://github.com/MechMindRobotics/mechdlk_sdk/tree/v2.1.0) to the project folder.
 
-3. Download the [third-party libraries (3rd_dll.zip)](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/3rd_dll.zip?csf=1&web=1&e=tTh4E1) and [resources (resources.zip)](https://mechmindonedrive-my.sharepoint.com/:u:/r/personal/no-reply_onedrive_mech-mind-robotics_com_cn/Documents/Community/Download%20Center/Installations/Mech-DLK%20SDK%202.1.0/resources.zip?csf=1&web=1&e=L9WL2x) that Mech-DLK SDK relies on to the project folder.
+3. Download the [third-party libraries (3rd_dll.zip) and resources (resources.zip)](https://mechmindonedrive-my.sharepoint.com/:f:/g/personal/no-reply_onedrive_mech-mind-robotics_com_cn/EmQzsLUIrPxEixvn80V3rdcBwFOnIr3nWoSww9YXitAefw?e=k1gggB) that Mech-DLK SDK relies on to the project folder.
 
 4. Unzip the downloaded packages of third-party libraries and resources.
 

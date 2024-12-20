@@ -12,7 +12,7 @@
 Mech-DLK SDK는 [Mech-DLK](https://kr.mech-mind.com/product/P0042.html)와 함께 사용하도록 특별히 설계된 보조 개발 소프트웨어 키트로, 소프트웨어 시스템에서 딥 러닝 추론을 더욱 쉽게 수행할 수 있도록 도와줍니다. 이제 [Mech-Vision](https://kr.mech-mind.com/product/P0041.html) 에 의존하지 않고도 딥 러닝 모델을 빠르게 배포하고, 딥 러닝 기능을 여러분의 애플리케이션에 유연하게 통합할 수 있습니다. 현재 C#, C++ 및 C 프로그래밍 언어가 지원됩니다.
 
 📥 Mech-DLK 소프트웨어를 설치해야 하는 경우, [다운로드 센터](https://downloads.mech-mind.com/kr?tab=tab-dlk)로 이동하여 Mech-DLK 설치 프로그램을 다운로드합니다. 소프트웨어 라이센스에 대한 자세한 내용은 info@mech-mind.net 으로 문의해주시기 바랍니다.
-> **NOTE**: Mech-DLK SDK 2.1.0 버전 이상을 사용하는 경우, Mech-DLK 2.6.0 버전 이상을 다운로드해야 합니다. Mech-DLK SDK 2.1.0 이전 버전을 사용하는 경우에는 Mech-DLK 2.4.2 - 2.5.3 버전을 다운로드해야 합니다.
+> **NOTE**: Mech-DLK SDK 2.1.0 버전 이상을 사용하는 경우, Mech-DLK 2.6.0 버전 이상을 다운로드해야 합니다. Mech-DLK SDK 2.1.0 이전 버전을 사용하는 경우에는 Mech-DLK 2.4.2 - 2.5.4 버전을 다운로드해야 합니다.
 
 
 💡사용하는 과정에서 SDK에 관한 질문이나 공유할 내용이 있다면, [Mech-Mind 온라인 커뮤니티](https://community.mech-mind.com/)에 자유롭게 게시해 주시기 바랍니다.

@@ -70,10 +70,13 @@ struct MMindContour
     std::vector<std::vector<MMindPoint>> contourPoints; ///< Contour points.
 };
 
+/**
+ * @brief Defines the information on the mask contour and the label names of the mask contours.
+ */
 struct MMindContourWithLabel
 {
     size_t contourNum = 0;                              ///< The number of contours.
-    std::vector<std::string> labelNames;                ///< The label name of contours.
+    std::vector<std::string> labelNames;                ///< The label names of contours.
     std::vector<std::vector<MMindPoint>> contourPoints; ///< Contour points.
 };
 

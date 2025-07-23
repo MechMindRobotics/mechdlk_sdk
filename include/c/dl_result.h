@@ -85,13 +85,13 @@ typedef struct Contour
  */
 typedef struct
 {
-    char** strings; ///< Dynamic string array.
-    int count;      ///< The current number of array
-    int capacity;   /// The capacity of array.
+    char** strings; ///< The dynamic string array.
+    int count;      ///< The current number of array.
+    int capacity;   ///< The capacity of array.
 } StringArray;
 
 /**
- * @brief This struct defines the information on the mask contour.
+ * @brief This struct defines the information on the mask contour and the label names of the mask contours.
  */
 typedef struct ContourWithLabel
 {

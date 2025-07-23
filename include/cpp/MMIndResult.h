@@ -52,12 +52,13 @@ struct MMindPoint
  */
 struct MMindBbox
 {
-    float upperLeftX;  ///< X-coordinate of the upper-left corner.
-    float upperLeftY;  ///< Y-coordinate of the upper-left corner.
-    float lowerRightX; ///< X-coordinate of the lower-right corner.
-    float lowerRightY; ///< Y-coordinate of the lower-right corner.
-    float confidence;  ///< Confidence of the bounding box.
-    int label;         ///< Label of the bounding box.
+    float upperLeftX;      ///< X-coordinate of the upper-left corner.
+    float upperLeftY;      ///< Y-coordinate of the upper-left corner.
+    float lowerRightX;     ///< X-coordinate of the lower-right corner.
+    float lowerRightY;     ///< Y-coordinate of the lower-right corner.
+    float confidence;      ///< Confidence of the bounding box.
+    int labelIndex;        ///< Label index of the bounding box.
+    std::string labelName; ///< Label name of the bounding box.
 };
 
 /**
@@ -69,22 +70,29 @@ struct MMindContour
     std::vector<std::vector<MMindPoint>> contourPoints; ///< Contour points.
 };
 
+struct MMindContourWithLabel
+{
+    size_t contourNum = 0;                              ///< The number of contours.
+    std::vector<std::string> labelNames;                ///< The label name of contours.
+    std::vector<std::vector<MMindPoint>> contourPoints; ///< Contour points.
+};
+
 /**
  * @brief Defines the defect segmentation and edge detection results.
  */
-struct MMIndDefectAndEdgeResult
+struct MMindDefectAndEdgeResult
 {
-    MMindContour mask;        ///< Contour of the segmentation result.
-    MMindImage confidenceMat; ///< Confidence map of the segmentation result.
+    MMindContourWithLabel mask; ///< Contour of the segmentation result.
 };
 
 /**
  * @brief Defines the classification result.
  */
-struct MMIndClassificationResult
+struct MMindClassificationResult
 {
-    std::vector<int> labels;        ///< Category label.
-    std::vector<float> confidences; ///< Confidence of the corresponding category.
+    std::vector<int> labelIndices;       ///< Category label indices.
+    std::vector<std::string> labelNames; ///< Category label names.
+    std::vector<float> confidences;      ///< Confidence of the corresponding category.
 };
 
 /**
@@ -119,8 +127,8 @@ struct MMindTextRecognitionResult
  */
 struct MMindTextDetectionResult
 {
-    std::vector<double> confidences; ///< Confidences of text detection.
-    MMindContour textContour;        ///< Result of text detection.
+    std::vector<float> confidences; ///< Confidences of text detection.
+    MMindContour textContour;       ///< Result of text detection.
 };
 
 /**
@@ -146,8 +154,8 @@ struct MMindUnsupSegResult
  */
 struct MMindResult
 {
-    std::vector<MMIndClassificationResult> classificationResults;   ///< List of classification results.
-    std::vector<MMIndDefectAndEdgeResult> defectAndEdgeResults;     ///< List of defect segmentation results.
+    std::vector<MMindClassificationResult> classificationResults;   ///< List of classification results.
+    std::vector<MMindDefectAndEdgeResult> defectAndEdgeResults;     ///< List of defect segmentation results.
     std::vector<MMindObjectAndInsResult> objecAndInsResults;        ///< List of object detection or instance segmentation results.
     std::vector<MMindFastPositioningResult> fastPositioningResults; ///< List of fast positioning results.
     std::vector<MMindTextRecognitionResult> textRecognitionResults; ///< List of text recognition results.

@@ -41,6 +41,9 @@ if(MSVC)
 endif()
 
 set(MechDLKSDK_INCLUDE_DIRS "${MechDLKSDKConfig_PATH}/include")
+
+list(APPEND MechDLKSDK_LIBRARIES optimized "mmind_backendengine_cpu")
+list(APPEND MechDLKSDK_LIBRARIES optimized "mmind_backendengine_cuda")
 list(APPEND MechDLKSDK_LIBRARIES optimized "mmind_dl_sdk_common")
 list(APPEND MechDLKSDK_LIBRARIES optimized "mmind_dl_sdk_c")
 list(APPEND MechDLKSDK_LIBRARIES optimized "mmind_dl_sdk_cpp_base")

@@ -66,7 +66,8 @@ typedef struct Bbox
     float lowerRightX; ///< X-coordinate of the lower-right corner.
     float lowerRightY; ///< Y-coordinate of the lower-right corner.
     float confidence;  ///< Confidence of the bounding box.
-    int label;         ///< Label of the bounding box.
+    int labelIndex;    ///< Label index of the bounding box.
+    char* labelName;   ///< Label name of the bounding box.
 } Bbox;
 
 /**
@@ -78,6 +79,27 @@ typedef struct Contour
     int* eachCountourPointNum; ///< The number of points in each contour.
     int* contourPoints;        ///< Contour points.
 } Contour;
+
+/**
+ * @brief This struct defines the data format for storing multiple strings.
+ */
+typedef struct
+{
+    char** strings; ///< Dynamic string array.
+    int count;      ///< The current number of array
+    int capacity;   /// The capacity of array.
+} StringArray;
+
+/**
+ * @brief This struct defines the information on the mask contour.
+ */
+typedef struct ContourWithLabel
+{
+    int contourNum;            ///< The number of contours.
+    int* eachCountourPointNum; ///< The number of points in each contour.
+    int* contourPoints;        ///< Contour points.
+    StringArray labelNames;    ///< The label names of contours.
+} ContourWithLabel;
 
 /**
  * @brief This struct defines the information required to recover the result to the original image.
@@ -94,7 +116,8 @@ typedef struct ResultRestoreInfo
  */
 typedef struct ClassificationResult
 {
-    int label;                     ///< Category label.
+    int labelIndex;                ///< Category label index.
+    char* labelName;               ///< Category label name.
     float confidence;              ///< Confidence of the corresponding category.
     ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
 } ClassificationResult;
@@ -104,8 +127,7 @@ typedef struct ClassificationResult
  */
 typedef struct DefectAndEdgeResult
 {
-    Contour maskContour;           ///< Contour of the segmentation result.
-    MMindImage confidenceMat;      ///< Confidence map of the segmentation result.
+    ContourWithLabel maskContour;  ///< Contour of the segmentation result.
     ResultRestoreInfo restoreInfo; ///< Information required for result restoration.
 } DefectAndEdgeResult;
 

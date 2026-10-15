@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net461</TargetFrameworks>
+    <LangVersion>7.3</LangVersion>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+     <AssemblyName>example_csharp_halcon</AssemblyName>
+    <RootNamespace>Mmind.Dl.Examples</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <OutputPath>.\build\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <OutputPath>.\build\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="mmind_dl_sdk_csharp">
+      <HintPath>mmind_dl_sdk_csharp.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <Choose>
+    <When Condition="Exists('$(HALCONROOT)\bin\dotnet35\halcondotnet.dll')">
+      <ItemGroup>
+        <Reference Include="HalconDotNet">
+          <HintPath>$(HALCONROOT)\bin\dotnet35\halcondotnet.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="HalconDotNet" Version="19.11.0" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+
+  <ItemGroup>
+    <Compile Include="InferWithHalcon.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+
+</Project>

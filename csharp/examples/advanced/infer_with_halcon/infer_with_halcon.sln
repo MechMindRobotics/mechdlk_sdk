@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infer_with_halcon", "infer_with_halcon.csproj", "{5C9F8C5B-8C5D-4F9G-0D3B-9G2C8G5D8B4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C9F8C5B-8C5D-4F9G-0D3B-9G2C8G5D8B4E}.Debug|x64.ActiveCfg = Debug|x64
+		{5C9F8C5B-8C5D-4F9G-0D3B-9G2C8G5D8B4E}.Debug|x64.Build.0 = Debug|x64
+		{5C9F8C5B-8C5D-4F9G-0D3B-9G2C8G5D8B4E}.Release|x64.ActiveCfg = Release|x64
+		{5C9F8C5B-8C5D-4F9G-0D3B-9G2C8G5D8B4E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multi_thread_infer", "multi_thread_infer.csproj", "{7E1B0E7D-0E7F-6H1I-2F5D-1I4E0I7F0D6G}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E1B0E7D-0E7F-6H1I-2F5D-1I4E0I7F0D6G}.Debug|x64.ActiveCfg = Debug|x64
+		{7E1B0E7D-0E7F-6H1I-2F5D-1I4E0I7F0D6G}.Debug|x64.Build.0 = Debug|x64
+		{7E1B0E7D-0E7F-6H1I-2F5D-1I4E0I7F0D6G}.Release|x64.ActiveCfg = Release|x64
+		{7E1B0E7D-0E7F-6H1I-2F5D-1I4E0I7F0D6G}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

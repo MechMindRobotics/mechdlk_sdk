@@ -1,5 +1,12 @@
-samples/csharp/bin/
-samples/csharp/obj/x64/
-samples/csharp/.vs/
-samples/c/build/
-samples/cpp/build/
+.vs/
+.vscode/
+[Bb]in/
+[Oo]bj/
+[Bb]uild/
+packages/
+__pycache__/
+*.pyc
+*.user
+*.suo
+*.log
+dl_sdk_log/

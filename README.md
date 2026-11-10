@@ -26,6 +26,4 @@ For installation and runtime questions, see the [SDK FAQ](https://docs.mech-mind
 
 ## License
 
-For the terms that apply to the example source code, see [LICENSE](LICENSE).
-
 For SDK licensing information, see the [Mech-DLK SDK 3.0.0 software license guide (Chinese)](https://docs.mech-mind.net/zh/dlk-sdk-manual/3.0.0/faq/software-license.html).

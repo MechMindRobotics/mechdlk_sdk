@@ -27,3 +27,5 @@ For installation and runtime questions, see the [SDK FAQ](https://docs.mech-mind
 ## License
 
 The examples in this repository are distributed under the [BSD 3-Clause License](LICENSE).
+
+For SDK licensing information, see the [Mech-DLK SDK 3.0.0 software license guide (Chinese)](https://docs.mech-mind.net/zh/dlk-sdk-manual/3.0.0/faq/software-license.html).
